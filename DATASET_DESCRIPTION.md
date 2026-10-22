@@ -2,7 +2,7 @@
 
 ## Purpose and intended use
 
-HOOKWEAVE is a creator-owned, deterministic synthetic benchmark for developing and comparing AI-agent memory-hook policies. The intended task is to use an episode of conflicting memory notes and its eight case-local hook candidates to choose two hooks in order, then predict the four resulting memory values and the source-event indices supporting them. It is suitable for benchmark experiments, method comparison, and teaching controlled memory-update reasoning. It is not a record of user conversations or a validation set for a deployed assistant.
+HOOKWEAVE is a creator-owned, reproducibly generated synthetic benchmark for developing and comparing AI-agent memory-hook policies. The intended task is to use an episode of conflicting memory notes and its eight case-local hook candidates to choose two hooks in order, then predict the four resulting memory values and the source-event indices supporting them. It is suitable for benchmark experiments, method comparison, and teaching controlled memory-update reasoning. It is not a record of user conversations or a validation set for a deployed assistant.
 
 ## Data and split
 
@@ -21,12 +21,12 @@ The public prepared directory additionally contains `sample_submission.csv`; it 
 
 ## Known limitations
 
-All episodes, notes, roles, verification states, and outcomes are generated. They do not model the full ambiguity, language variety, privacy issues, or changing user intent in real conversations. Training and test differ by held-out *combinations* of reliability and drift regimes, but both are drawn from the same generator, schema, vocabulary, and event length. A score on this split therefore measures transfer within this synthetic family; it does not establish performance on unseen generators, languages, real users, or production memory systems. The benchmark evaluates four queries after fixed-length episodes, not long-running agents with tool failures, consent handling, deletion requests, or adversarial instructions. The data should not be used to infer that a hook policy is safe to deploy without separate real-world evaluation.
+All episodes, notes, roles, verification states, and outcomes are generated. They do not model the full ambiguity, language variety, privacy issues, or changing user intent in real conversations. Test verification flags and final true values are latent labels, and noisy public cues do not guarantee exact recovery of every test outcome. Training and test differ by held-out *combinations* of reliability and drift regimes, but both are drawn from the same generator, schema, vocabulary, and event length. A score on this split therefore measures transfer within this synthetic family; it does not establish performance on unseen generators, languages, real users, or production memory systems. The benchmark evaluates four queries after fixed-length episodes, not long-running agents with tool failures, consent handling, deletion requests, or adversarial instructions. The data should not be used to infer that a hook policy is safe to deploy without separate real-world evaluation.
 
 ## Source and license
 
-Dataset Source URL: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/tag/v1.0.1
+Dataset Source URL: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/tag/v1.0.2
 
-Participant dataset download: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/download/v1.0.1/dataset_public.zip
+Participant dataset download: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/download/v1.0.2/dataset_public.zip
 
 The generated dataset and its documentation are offered under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/ . Suggested attribution: "HOOKWEAVE — Ordered Memory Hook Replay, HOOKWEAVE dataset creators (2026), CC BY 4.0." No third-party conversation text or personal data was copied into the dataset.
