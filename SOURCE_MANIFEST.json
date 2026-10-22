@@ -1,0 +1,13 @@
+{
+  "title": "HOOKWEAVE — Ordered Memory Hook Replay",
+  "version": "v1.0.0",
+  "asset": "dataset_public.zip",
+  "bytes": 292207665,
+  "sha256": "2b092296cbd5e3b622767f518d7fc9f2a5e1221fa6d7c5f6fb1912a978afe460",
+  "train_cases": 4000,
+  "test_cases": 1000,
+  "events_per_case": 360,
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_type": "creator-owned synthetic dataset"
+}
