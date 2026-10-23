@@ -1,6 +1,6 @@
 # HOOKWEAVE — Ordered Memory Hook Replay
 
-This repository is the participant-safe source page for the HOOKWEAVE synthetic AI-agent memory-hook dataset. The v2.0.0 release asset `dataset_public.zip` contains 4,000 labeled training episodes and 1,000 unlabeled test episodes, with 360 events per episode. Solvers choose two ordered memory hooks and compute the resulting values and source-event indices from public events. Private final true values score the quality of the hook choice; they never control replay.
+This repository is the participant-safe source page for the HOOKWEAVE synthetic AI-agent memory-hook dataset. The v2.0.1 release asset `dataset_public.zip` contains 4,000 labeled training episodes and 1,000 unlabeled test episodes, with 360 events per episode. Solvers choose two ordered memory hooks and compute the resulting values and source-event indices from public events. Private final true values score the quality of the hook choice; they never control replay. Hook kinds have no separate scoring penalty.
 
 The dataset and documentation are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Suggested attribution: "HOOKWEAVE — Ordered Memory Hook Replay, HOOKWEAVE dataset creators (2026), CC BY 4.0." This is synthetic data and does not represent real conversations or measured production assistant behavior.
 
