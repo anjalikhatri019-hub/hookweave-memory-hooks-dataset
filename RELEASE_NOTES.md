@@ -1,7 +1,7 @@
-# v3.0.1 participant dataset and restore clarification
+# v4.0.0 two-slot hook selection dataset
 
-Asset: `dataset_public.zip`, 299,527,818 bytes, SHA-256 `c61dbb6afb1412c48068bfea6fc65ab7dab510850e716fde75f56155bd009a98`.
+Asset: `dataset_public.zip`, 299,519,978 bytes, SHA-256 `852acf62b3a51ba870b0bd1932941419a947cd3673cf0d5901e06edb85e5fcd5`.
 
 Archive members: `train.jsonl`, `test.jsonl`, `manifest.json`, `LICENSE_DATA.md`. The train split has 4,000 rows; the test split has 1,000 rows. This release intentionally excludes private answers and organizer generation/evaluation code.
 
-Documentation correction: `restore` checks its listed slot against the most recent capture and writes only to that slot; without a matching capture it is a no-op. Each supplied case has one capture and one restore candidate with equal listed slots. The participant asset is byte-identical to v3.0.0, including the embedded CC BY 4.0 notice whose suggested attribution links to that equivalent earlier release. The challenge description and dataset description now state the keyed rule explicitly. Data, private answers, Prepare, Grade, metric, and submission contract are unchanged.
+Structural repair: capture, restore, and expire candidates have been removed. Each case has one refresh and one merge candidate for each of four queried slots; select two different slots, yielding 24 legal pairs. Queried slots are selected so every candidate changes its initial value. Action credit is `1-(best public utility - selected utility)`, so every maximum-utility pair receives full action credit, even when it differs from the training oracle. Public events, private grading records, Prepare, Grade, title, and descriptions were rebuilt together. Previous releases remain available but are incompatible with v4.0.0.

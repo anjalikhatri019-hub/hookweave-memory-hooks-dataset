@@ -1,9 +1,9 @@
 {
-  "title": "HOOKWEAVE — Ordered Memory Hook Replay",
-  "version": "v3.0.1",
+  "title": "HOOKWEAVE — Two-Slot Memory Hook Selection",
+  "version": "v4.0.0",
   "asset": "dataset_public.zip",
-  "bytes": 299527818,
-  "sha256": "c61dbb6afb1412c48068bfea6fc65ab7dab510850e716fde75f56155bd009a98",
+  "bytes": 299519978,
+  "sha256": "852acf62b3a51ba870b0bd1932941419a947cd3673cf0d5901e06edb85e5fcd5",
   "train_cases": 4000,
   "test_cases": 1000,
   "events_per_case": 360,
