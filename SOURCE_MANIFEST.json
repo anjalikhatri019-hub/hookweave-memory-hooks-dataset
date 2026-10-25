@@ -1,9 +1,9 @@
 {
   "title": "HOOKWEAVE — Ordered Memory Hook Replay",
-  "version": "v2.0.1",
+  "version": "v3.0.0",
   "asset": "dataset_public.zip",
-  "bytes": 299407834,
-  "sha256": "0ce50782318312d257316369e092442cb0660b2b341cf3cf48a57fa109d9867b",
+  "bytes": 299527818,
+  "sha256": "c61dbb6afb1412c48068bfea6fc65ab7dab510850e716fde75f56155bd009a98",
   "train_cases": 4000,
   "test_cases": 1000,
   "events_per_case": 360,
