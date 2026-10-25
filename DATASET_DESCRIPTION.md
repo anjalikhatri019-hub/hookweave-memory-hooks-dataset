@@ -10,6 +10,8 @@ There are 5,000 independent episodes. Each has 360 chronological events about 20
 
 For each queried slot, `goal_values` selects the latest `cross-checked` report from the user role (0), falling back to the latest `cross-checked` report from any role, then to the latest report, then to `-1` if the slot has no report. This public source-priority rule does not depend on selected hooks. The organizer's grading records duplicate public-computable outcomes for verification; they contain no secret target needed to solve a test row.
 
+Each case has one `capture` and one `restore` candidate with the same listed slot. `restore` checks its listed slot against the saved capture and writes only to that slot; without a matching prior capture it is a no-op. In a two-hook program, capture followed immediately by restore leaves the slot unchanged. These no-op choices let a participant meet the exactly-two-hooks contract when no second state change is useful.
+
 ## File inventory and preparation
 
 The platform's private organizer input, `raw_dataset.zip`, contains exactly `dataset_public.zip` and `private_answers.jsonl`. `private_answers.jsonl` carries one private grading record per test case and must not be shown to participants. Prepare extracts the participant archive into the public directory, converts the private records to `answers.csv` in the private directory, and creates public `sample_submission.csv`. The participant archive, also available at the dataset link below, contains exactly:
@@ -27,8 +29,8 @@ All episodes, notes, roles, review markers, goals, and outcomes are generated. T
 
 ## Source and license
 
-Dataset Source URL: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/tag/v3.0.0
+Dataset Source URL: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/tag/v3.0.1
 
-Participant dataset download: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/download/v3.0.0/dataset_public.zip
+Participant dataset download: https://github.com/anjalikhatri019-hub/hookweave-memory-hooks-dataset/releases/download/v3.0.1/dataset_public.zip
 
 The generated dataset and its documentation are offered under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/ . Suggested attribution: "HOOKWEAVE — Ordered Memory Hook Replay, HOOKWEAVE dataset creators (2026), CC BY 4.0." No third-party conversation text or personal data was copied into the dataset.
