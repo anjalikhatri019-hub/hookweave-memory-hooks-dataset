@@ -1,12 +1,14 @@
 {
-  "title": "HOOKWEAVE — Two-Slot Memory Hook Selection",
-  "version": "v4.0.0",
+  "title": "HOOKWEAVE — Checkpointed Memory Hook Scheduling",
+  "version": "v5.0.0",
   "asset": "dataset_public.zip",
-  "bytes": 299519978,
-  "sha256": "852acf62b3a51ba870b0bd1932941419a947cd3673cf0d5901e06edb85e5fcd5",
+  "bytes": 292938902,
+  "sha256": "1bf211ebf5183e922e8aefe3fd835cc5d5bdd49bfbfd47953ae9076322d0968b",
   "train_cases": 4000,
   "test_cases": 1000,
   "events_per_case": 360,
+  "checkpoints": [180, 270, 360],
+  "budgets": [1, 2, 3],
   "license": "CC-BY-4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "source_type": "creator-owned synthetic dataset"
