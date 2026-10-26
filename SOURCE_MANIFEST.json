@@ -1,6 +1,7 @@
 {
   "title": "HOOKWEAVE — Checkpointed Memory Hook Scheduling",
-  "version": "v5.0.0",
+  "version": "v5.0.1",
+  "dataset_version": "5.0.0",
   "asset": "dataset_public.zip",
   "bytes": 292938902,
   "sha256": "1bf211ebf5183e922e8aefe3fd835cc5d5bdd49bfbfd47953ae9076322d0968b",

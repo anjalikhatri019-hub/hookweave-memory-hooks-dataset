@@ -1,5 +1,5 @@
-# v5.0.0 — checkpointed schedule release
+# v5.0.1 — slot-legality documentation correction
 
-The v5.0.0 participant archive replaces the static two-hook v4 data. Cases now have six queried slots, 12 candidates, three event checkpoints, and a budget of one to three executed hooks. The benchmark scores every intermediate stored-memory state and its evidence. Public test rows include all checkpoint goals; only oracle examples are withheld. The organizer ZIP, private answer records, generator, Prepare and Grade scripts are not public release assets.
+This patch clarifies that each slot may be selected at most once in a three-checkpoint schedule. Selecting two candidates for the same slot, even at different checkpoints, is an invalid evaluated row and scores zero. The challenge description no longer uses an initial-value change as an explanation for that rule. Dataset records, private answers, Prepare, Grade, metric, and participant ZIP bytes are unchanged from v5.0.0.
 
-The archive is 292,938,902 bytes, SHA-256 `1bf211ebf5183e922e8aefe3fd835cc5d5bdd49bfbfd47953ae9076322d0968b`. It is licensed under CC BY 4.0. Older versions remain available under their immutable release tags.
+The participant asset is 292,938,902 bytes, SHA-256 `1bf211ebf5183e922e8aefe3fd835cc5d5bdd49bfbfd47953ae9076322d0968b`, under CC BY 4.0. The original v5.0.0 release remains available.
